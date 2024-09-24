@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-09-25 00:32:37.651917",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "paid_by",
+  "column_break_qdnx",
+  "split_method",
+  "section_break_eahs",
+  "splits",
+  "section_break_gsxg",
+  "date",
+  "amount",
+  "currency",
+  "column_break_uknz",
+  "description",
+  "notes",
+  "section_break_jaxj",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jaxj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_uknz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "paid_by",
+   "fieldtype": "Link",
+   "label": "Paid By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gsxg",
+   "fieldtype": "Section Break",
+   "label": "Types"
+  },
+  {
+   "fieldname": "splits",
+   "fieldtype": "Table",
+   "label": "Splits",
+   "options": "Expense Split",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qdnx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Equally",
+   "fieldname": "split_method",
+   "fieldtype": "Select",
+   "label": "Split Method",
+   "options": "Equally\nManual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_eahs",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-25 01:25:48.077117",
+ "modified_by": "Administrator",
+ "module": "Batwara App",
+ "name": "Expense",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
