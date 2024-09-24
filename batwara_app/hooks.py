@@ -4,6 +4,9 @@ app_publisher = "mohtashim"
 app_description = "split wise alternative"
 app_email = "shoaibmohtashim973@gmail.com"
 app_license = "mit"
+
+export_python_type_annotions = True
+
 # required_apps = []
 
 # Includes in <head>
